@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  bsb:
+    build: ./bsb
+    image: bsb
+  build:
+    image: bsb
+    build: .
+    volumes:
+      - .:/src

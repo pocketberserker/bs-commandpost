@@ -1,0 +1,13 @@
+{
+  "name": "@pocketberserker/bs-commandpost",
+  "bsc-flags": ["-bs-no-version-header", "-bs-super-errors"],
+  "sources": [
+    {
+      "dir": "src"
+    },
+    {
+      "dir": "example",
+      "type": "dev"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@pocketberserker/bs-commandpost",
+  "version": "0.0.1",
+  "description": "BuckleScript binding for commandpost",
+  "files": [
+    "src",
+    "bsconfig.json"
+  ],
+  "scripts": {
+    "build": "bsb -make-world",
+    "watch:bsb": "bsb -make-world -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pocketberserker/bs-commandpost.git"
+  },
+  "author": "pocketberserker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pocketberserker/bs-commandpost/issues"
+  },
+  "homepage": "https://github.com/pocketberserker/bs-commandpost#readme",
+  "dependencies": {
+    "commandpost": "^1.4.0"
+  },
+  "devDependencies": {
+    "bs-platform": "^4.0.14"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
