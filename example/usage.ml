@@ -4,10 +4,10 @@ open Commandpost
 node lib/js/example/usage.js -r -c a.json b.txt --config=c.json remote -v d add e.txt -- f.txt
 *)
 
-type root_options = {
+type root_options = <
   replace: bool;
   config: string array;
-}
+> Js.t
 
 type root_args = RootArgs
 
@@ -25,13 +25,13 @@ let root: (root_options, root_args) Command.t =
     Js.log rest
   )
 
-type remote_options = {
+type remote_options = <
   verbose: bool;
-}
+> Js.t
 
-type remote_args = {
+type remote_args = <
   remote_url: string;
-}
+> Js.t
 
 let remote: (remote_options, remote_args) Command.t =
   root
@@ -47,9 +47,9 @@ let remote: (remote_options, remote_args) Command.t =
 
 type remote_add_options = RemoteAddOptions
 
-type remote_add_args = {
+type remote_add_args = <
   remote_urls: string array;
-}
+> Js.t
 
 let add: (remote_add_options, remote_add_args) Command.t =
   let rec inner = lazy (
